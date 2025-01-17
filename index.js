@@ -8,8 +8,8 @@ const port = process.env.PORT || 8080;
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 const corsOptions = {
-  origin: 'https://dinksolution-5syx2sh2.launchpad.cfapps.eu10.hana.ondemand.com',
-  methods: 'POST,GET'
+    origin: '*',
+    methods: 'POST,GET'
 };
 
 app.use(cors(corsOptions));
