@@ -41,12 +41,13 @@ app.post('/Email',async (req, res) => {
           subject: "Thank You for Reporting the Issue on Fit4Life – We’re Working on It!",
           html: `
               <p>Dear ${senderName},</p>
-              <p>Thank you for bringing the issue on our website to our attention. We apologize for any inconvenience this may have caused.</p>
+              <p>Thank you for bringing the issue on Fit4Life to our attention. We apologize for any inconvenience this may have caused.</p>
               <p>We take all reports seriously and are currently investigating the matter. Our technical team will look into the issue as soon as possible, and we will update you on our progress or provide a solution as soon as it's resolved.</p>
               <p>In the meantime, if you have any additional details or further questions, please don't hesitate to reply to this email. We appreciate your patience and understanding. Your feedback is valuable in helping us improve the website.</p>
               <p>Best regards,<br>Zaid Belim</p>
           `,
       });
+      
       
       const date = new Date(); 
       const options = { year: 'numeric', month: 'long', day: 'numeric' };
