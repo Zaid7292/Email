@@ -5,14 +5,11 @@ const nodemailer = require("nodemailer");
 const app = express();
 const port = process.env.PORT || 8080;
 
+app.use(cors({
+    "origin":"*"
+}))
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-const corsOptions = {
-    "origin": 'https://port8081-workspaces-ws-whw4t.eu10.applicationstudio.cloud.sap',
-    "methods": 'POST,GET'
-};
-
-app.use(cors(corsOptions));
 app.get('/', function(req, res){
   res.send("Email is Actived!");
 });
