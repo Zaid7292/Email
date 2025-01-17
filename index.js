@@ -42,9 +42,9 @@ app.post('/Email',async (req, res) => {
           html: `
               <p>Dear ${senderName},</p>
               <p>Thank you for bringing the issue on Fit4Life to our attention. We apologize for any inconvenience this may have caused.</p>
-              <p>We take all reports seriously and are currently investigating the matter. Our technical team will look into the issue as soon as possible, and we will update you on our progress or provide a solution as soon as it's resolved.</p>
-              <p>In the meantime, if you have any additional details or further questions, please don't hesitate to reply to this email. We appreciate your patience and understanding. Your feedback is valuable in helping us improve the website.</p>
-              <p>Best regards,<br>Zaid Belim</p>
+              <p> We're currently working on fixing it and will have it resolved as soon as possible.</p>
+              <p>If you have any more details or information to share, feel free to send them as same this way. We’ll keep you updated once it’s fixed.</p>
+              <p>Best regards,<br>Displ Fiori Team</p>
           `,
       });
       
