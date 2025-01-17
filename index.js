@@ -8,7 +8,7 @@ const port = process.env.PORT || 8080;
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 const corsOptions = {
-  origin: 'https://dinksolution-5syx2sh2.launchpad.cfapps.eu10.hana.ondemand.com/site?siteId=308b0854-cacd-4fe9-b146-d82b0d350a39#WalkieTalkie-display?sap-ui-app-id-hint=saas_approuter_walkietalkie', 
+  origin: 'https://dinksolution-5syx2sh2.launchpad.cfapps.eu10.hana.ondemand.com',
   methods: 'POST,GET'
 };
 
