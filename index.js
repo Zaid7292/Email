@@ -8,7 +8,7 @@ const port = process.env.PORT || 8080;
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 const corsOptions = {
-  origin: 'https://port8081-workspaces-ws-whw4t.eu10.applicationstudio.cloud.sap/', 
+  origin: 'https://port8081-workspaces-ws-whw4t.eu10.applicationstudio.cloud.sap/index.html', 
   methods: 'POST,GET'
 };
 
