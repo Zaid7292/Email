@@ -63,7 +63,6 @@ app.post('/Email',async (req, res) => {
             <p>Name :${senderName}</p>
             <p>Email :${senderEmail}</p>
             <p>Message :${senderFeedback}</p><br>
-            <p>Best regards,<br>Zaid Belim</p>
         `,
     });
         res.status(200).json({Message:"Thank-you email successfully sent"});
