@@ -14,7 +14,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 app.get('/', function(req, res){
-  res.send("welcome");
+  res.send("Email is Actived!");
 });
 app.post('/Email',async (req, res) => {
     try {
