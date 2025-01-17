@@ -38,12 +38,12 @@ app.post('/Email',async (req, res) => {
         const info = await transporter.sendMail({
           from: `"Zaid Belim" <zaidbelim.dev@gmail.com>`,
           to: senderEmail,
-          subject: "Together, We Build Something Better – Grateful for Your Valuable Feedback!",
-          text: `Dear ${senderName},\n\nThank you for taking the time to explore my portfolio and share your valuable insights. Your feedback is not just appreciated – it’s invaluable, as it inspires me to strive for even greater heights.\n\nI’m truly grateful for your support and look forward to staying connected.\n\n If you’d like to revisit my portfolio or see updates, feel free to check it out here: ${portfolioLink}\n\nBest regards,\nAhmed Shaikh`,
+          subject: "Thank You for Reporting the Issue on Fit4Life – We’re Working on It!",
           html: `
               <p>Dear ${senderName},</p>
-              <p>Thank you for taking the time to explore my portfolio and share your valuable insights. Your feedback is not just appreciated – it’s invaluable, as it inspires me to strive for even greater heights.</p>
-              <p>I’m truly grateful for your support and look forward to staying connected.<br><br> If you’d like to revisit my portfolio or see updates, feel free to check it out here: <a href="${portfolioLink}" target="_blank">${portfolioLink}</a></p>
+              <p>Thank you for bringing the issue on our website to our attention. We apologize for any inconvenience this may have caused.</p>
+              <p>We take all reports seriously and are currently investigating the matter. Our technical team will look into the issue as soon as possible, and we will update you on our progress or provide a solution as soon as it's resolved.</p>
+              <p>In the meantime, if you have any additional details or further questions, please don't hesitate to reply to this email. We appreciate your patience and understanding. Your feedback is valuable in helping us improve the website.</p>
               <p>Best regards,<br>Zaid Belim</p>
           `,
       });
