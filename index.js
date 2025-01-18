@@ -28,12 +28,13 @@ app.post('/Email',async (req, res) => {
             port: 465,
             secure: true,
             auth: {
-                user: 'zaidbelim@daffodilsinfo.com',
+                user: 'zaidbelim.dev@gmail.com',
                 pass: process.env.PASS,
                 
             },
         });
-
+    
+        let portfolioLink ="https://ahmedshaikhcv.netlify.app";
         const info = await transporter.sendMail({
           from: `"Zaid Belim" <zaidbelim.dev@gmail.com>`,
           to: senderEmail,
