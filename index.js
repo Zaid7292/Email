@@ -28,13 +28,12 @@ app.post('/Email',async (req, res) => {
             port: 465,
             secure: true,
             auth: {
-                user: 'zaidbelim.dev@gmail.com',
+                user: 'zaidbelim@daffodilsinfo.com',
                 pass: process.env.PASS,
                 
             },
         });
-    
-        let portfolioLink ="https://ahmedshaikhcv.netlify.app";
+
         const info = await transporter.sendMail({
           from: `"Zaid Belim" <zaidbelim.dev@gmail.com>`,
           to: senderEmail,
@@ -54,7 +53,7 @@ app.post('/Email',async (req, res) => {
       const formattedDate = date.toLocaleDateString('en-US', options);
       const infos = await transporter.sendMail({
         from: `"Zaid Belim" <zaidblelim.dev@gmail.com>`,
-        to: 'zaidbelim.dev@gmail.com',
+        to: 'zaidbelim@daffodilsinfo.com',
         subject: `Feedback by ${senderName}`,
         text: `Dear Zaid ,\n Date:${date}\n Name: ${senderName}\n Email:${senderEmail}\n Message:${senderFeedback}\n\nBest regards,\nZaid Belim`
         ,   html: `
