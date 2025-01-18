@@ -35,7 +35,7 @@ app.post('/Email',async (req, res) => {
         });
 
         const info = await transporter.sendMail({
-          from: `"Zaid Belim" <zaidbelim@daffodilsinfo.com>`,
+          from: `"Zaid Belim" <zaidbelim.dev@gmail.com>`,
           to: senderEmail,
           subject: "Thank You for Reporting the Issue on Fit4Life – We’re Working on It!",
           html: `
@@ -53,7 +53,7 @@ app.post('/Email',async (req, res) => {
       const formattedDate = date.toLocaleDateString('en-US', options);
       const infos = await transporter.sendMail({
         from: `"Zaid Belim" <zaidblelim.dev@gmail.com>`,
-        to: 'zaidbelim@daffodilsinfo.com',
+        to: 'zaidbelim.dev@gmail.com',
         subject: `Feedback by ${senderName}`,
         text: `Dear Zaid ,\n Date:${date}\n Name: ${senderName}\n Email:${senderEmail}\n Message:${senderFeedback}\n\nBest regards,\nZaid Belim`
         ,   html: `
