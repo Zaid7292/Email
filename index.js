@@ -28,7 +28,7 @@ app.post('/Email',async (req, res) => {
             port: 465,
             secure: true,
             auth: {
-                user: 'zaidbelim.dev@gmail.com',
+                user: 'zaidbelim@daffodilsinfo.com',
                 pass: process.env.PASS,
                 
             },
@@ -36,7 +36,7 @@ app.post('/Email',async (req, res) => {
     
         let portfolioLink ="https://ahmedshaikhcv.netlify.app";
         const info = await transporter.sendMail({
-          from: `"Zaid Belim" <zaidbelim.dev@gmail.com>`,
+          from: `"Zaid Belim" <zaidbelim@daffodilsinfo.com>`,
           to: senderEmail,
           subject: "Thank You for Reporting the Issue on Fit4Life – We’re Working on It!",
           html: `
@@ -53,8 +53,8 @@ app.post('/Email',async (req, res) => {
       const options = { year: 'numeric', month: 'long', day: 'numeric' };
       const formattedDate = date.toLocaleDateString('en-US', options);
       const infos = await transporter.sendMail({
-        from: `"Zaid Belim" <zaidblelim.dev@gmail.com>`,
-        to: 'zaidbelim.dev@gmail.com',
+        from: `"Zaid Belim" <zaidbelim@daffodilsinfo.com>`,
+        to: 'zaidbelim@daffodilsinfo.com',
         subject: `Feedback by ${senderName}`,
         text: `Dear Zaid ,\n Date:${date}\n Name: ${senderName}\n Email:${senderEmail}\n Message:${senderFeedback}\n\nBest regards,\nZaid Belim`
         ,   html: `
