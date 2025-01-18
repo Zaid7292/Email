@@ -35,7 +35,7 @@ app.post('/Email',async (req, res) => {
         });
 
         const info = await transporter.sendMail({
-          from: `"Zaid Belim" <zaidbelim.dev@gmail.com>`,
+          from: `"Zaid Belim" <zaidbelim@daffodilsinfo.com>`,
           to: senderEmail,
           subject: "Thank You for Reporting the Issue on Fit4Life – We’re Working on It!",
           html: `
